@@ -1,5 +1,3 @@
-'use strict';
-
 angular.module('chattyApp').service('messageService', function($http) {
 
   this.getMessages = function() {
@@ -14,7 +12,6 @@ angular.module('chattyApp').service('messageService', function($http) {
   };
 
   this.sendMessage = function(message) {
-    console.log(message);
     return $http({
       method: 'POST',
       url: 'http://localhost:9001',
