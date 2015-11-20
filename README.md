@@ -16,7 +16,7 @@ How would setting up a server be different from setting up a server in Node?
 There are three steps to setting up an express server:
 * Require the express library: `var express = require('express');`
 * Instantiate the express app: `var app = express();`
-* Have the app listen on a port: `app.listen(8080);`
+* Have the app listen on a port: `app.listen(9001);`
 
 ###Step 2: Create GET endpoint
 
@@ -42,7 +42,7 @@ Remember all of the crappy code we had to write to get POST data? Express and bo
 * In order to get the POST data without using .on('data') and .on('end'), we'll use bodyParser:
 
 ```javascript
-app.use(bodyParser());
+app.use(bodyParser.json());
 ```
 
 bodyParser is *middleware*, meaning it runs before every request. It automatically parses the body of requests and puts it together in a nice `req.body` property.
