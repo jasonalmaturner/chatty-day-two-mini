@@ -32,7 +32,7 @@ Pretty cool right?
 
 Now create your `get endpoint for your server.js
 
-###Step 9: Create POST endpoint
+###Step 3: Create POST endpoint
 
 Remember all of the crappy code we had to write to get POST data? Express and body-parser make this a lot simpler.
 
@@ -51,7 +51,7 @@ bodyParser is *middleware*, meaning it runs before every request. It automatical
 
 Your server.js might look something like this when it's done: https://gist.github.com/cahlan/7027611
 
-###Step 3: Refactor header writing into middlware
+###Step 4: Refactor header writing into middlware
 
 Let's create our own middleware to deal with headers.
 
